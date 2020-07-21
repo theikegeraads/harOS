@@ -1,11 +1,33 @@
 @font-face {
     font-family: "product-sans";
-    src: url("./lib/fonts/Product\ Sans\ Regular.ttf");
+    src: url("../fonts/Product\ Sans\ Regular.ttf");
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
 }
 
 body {
-    background-image: url('img/background.png');
+    background-image: url('../img/background.png');
     background-size: cover;
+    margin: 0;
+}
+
+#fade {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 10000;
+    opacity: 1;
+    animation: fadeIn 2s forwards linear;
 }
 
 #userBubble {
