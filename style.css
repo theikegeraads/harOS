@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "product-sans";
+    src: url("./lib/fonts/Product\ Sans\ Regular.ttf");
+}
+
 body {
     background-image: url('img/background.png');
     background-size: cover;
@@ -22,7 +27,6 @@ body {
 
 #harWave {
     height: 90%;
-
     position: absolute;
     margin: auto;
     top: 0;
@@ -38,4 +42,99 @@ body {
     top: 50px;
     left: 0;
     right: 0;
+    font-family: product-sans;
+    letter-spacing: 2px;
+}
+
+#codeField {
+    position: absolute;
+    top: 220px;
+    left: -10px;
+    height: 22.6px;
+    width: 185px;
+    border: 2.6px solid #323435;
+    background-color: #AAAAAA;
+}
+
+#codeField:focus {
+    outline: none;
+}
+
+#nextButton {
+    height: 24.6px;
+    width: 24.6px;
+    background-color: #AAAAAA;
+    border: 2.6px solid #323435;
+    position: absolute;
+    margin: auto;
+    top: 220px;
+    left: 168px;
+    border-radius: 1px;
+}
+
+#nextArrow {
+    height: 80%;
+    position: relative;
+    margin: auto;
+    top: 3.5px;
+    left: 4.5px;
+    right: 0;
+    bottom: 0;
+    /* background-color: ; */
+    color: #323435;
+}
+
+#powerText {
+    color: white;
+    font-family: product-sans;
+    font-weight: lighter;
+    position: absolute;
+    bottom: 40px;
+    right: 14px;
+}
+
+#logText {
+    color: white;
+    font-family: product-sans;
+    font-weight: lighter;
+    position: absolute;
+    bottom: 40px;
+    left: 10px;
+}
+
+#powerButton {
+    height: 50px;
+    width: 50px;
+    background-color: #AAAAAA;
+    border: 3px solid #323435;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+#logButton {
+    height: 50px;
+    width: 50px;
+    background-color: #AAAAAA;
+    border: 3px solid #323435;
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+}
+
+#offIcon {
+    /* font-weight: lighter; */
+    position: absolute;
+    left: 9px;
+    top: 9px;
+    font-size: 200%;
+    color: #323435;
+}
+
+#signoutIcon {
+    position: absolute;
+    left: 9px;
+    top: 9px;
+    font-size: 200%;
+    color: #323435;
 }
