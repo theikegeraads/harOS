@@ -1,0 +1,5 @@
+{
+    "editor.formatOnPaste": true,
+    "editor.autoIndent": "full",
+    "files.autoSave": "afterDelay"
+}
