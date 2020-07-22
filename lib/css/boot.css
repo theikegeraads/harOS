@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "product-sans";
+    src: url("/lib/fonts/Product\ Sans\ Regular.ttf");
+}
+
+@keyframes load{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+body {
+    background-color: black;
+    margin: 0;
+}
+
+#loadingBar {
+    height: 3px;
+    width: 0%;
+    background-color: white;
+    animation: load 10s forwards linear;
+}
+
+#har {
+    height: 200px;
+    top: 0;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: fixed;
+}
+
+#titleText {
+    color: white;
+    font-family: product-sans;
+    letter-spacing: 0.8px;
+    position: relative;
+    text-align: center;
+    top: 160px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: white;
+    font-family: product-sans;
+
+}
+
+#topText{
+    text-align: center;
+}
+.loadText {
+    position: relative;
+    text-align: center;
+    margin: 0px;
+    top: 400px;
+    visibility: hidden;
+}
+
+#load{
+    margin-top: 75px;
+    visibility: visible;
+}
