@@ -3,33 +3,28 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HarOS</title>
-    <link rel="stylesheet" href="./lib/css/style.css">
-    <link rel="stylesheet" href="./lib/fontawesome/css/all.css">
-    <script src="main.js"></script>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" href="/lib/css/boot.css">
+    <title>Starting harOS</title>
 </head>
 
 <body>
-    <div id="fade"></div>
-    <div id="loginContent">
-        <h1 id="userText">Har</h1>
-        <div id="userBubble">
-            <img id="harWave" src="./lib/img/harThumb.png">
-            <input id="codeField" type="text" placeholder="Wat is dien code?">
-            <div id="nextButton">
-                <i class="fas fa-arrow-right" id="nextArrow"></i>
-            </div>
-        </div>
-        <h6 id="powerText">Oetzette</h6>
-        <h6 id="logText">Aafmelde</h6>
-        <div id="powerButton">
-            <i class="fas fa-power-off" id="offIcon"></i>
-        </div>
-        <div id="logButton">
-            <i class="fas fa-sign-out-alt" id="signoutIcon"></i>
-        </div>
+    <div id="blackScreen"></div>
+    <div id="loadingBar"></div>
+    <h3 id="topText">Please wait...</h3>
+    <h1 id="titleText">harOS</h1>
+    <img id="har" src="/lib/img/harWave.png">
+    <div id="loadingTexts">
+        <h4 class="loadText" id="LOB">✔ Nutteloze LOB lessen.</h4>
+        <h4 class="loadText" id="maas">✔ FISHHEE LANGS DE MAAAAAAAAAS</h4>
+        <h4 class="loadText" id="watsj">✔ Oerwatsj</h4>
+        <h4 class="loadText" id="ninja">✔ Ninja geluiden</h4>
+        <h4 class="loadText" id="wok">✔ Wok</h4>
+        <h4 class="loadText" id="load">Loading Nutteloze LOB Lessen..</h4>
     </div>
+
+    <script src="/lib/main.js"></script>
+
 </body>
 
 </html>
