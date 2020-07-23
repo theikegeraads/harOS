@@ -18,6 +18,7 @@ body {
     background-image: url('../img/background.png');
     background-size: cover;
     margin: 0;
+    user-select: none;
 }
 
 #fade {
@@ -30,6 +31,14 @@ body {
     animation: fadeIn 2s forwards linear;
 }
 
+#blackScreen {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+}
+
 #userBubble {
     height: 200px;
     width: 200px;
@@ -39,7 +48,7 @@ body {
     left: 0;
     right: 0;
     margin: auto;
-    position: fixed;
+    position: absolute;
     border-radius: 1000px;
 }
 
@@ -102,7 +111,6 @@ body {
     left: 4.5px;
     right: 0;
     bottom: 0;
-    /* background-color: ; */
     color: #323435;
 }
 
@@ -145,7 +153,6 @@ body {
 }
 
 #offIcon {
-    /* font-weight: lighter; */
     position: absolute;
     left: 9px;
     top: 9px;
@@ -159,4 +166,84 @@ body {
     top: 9px;
     font-size: 200%;
     color: #323435;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: white;
+    font-family: product-sans;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.haijeButton {
+    height: 50px;
+    width: 120px;
+    background-color: #AAAAAA;
+    border: 3px solid #323435;
+    font-family: product-sans;
+    color: #323435;
+    text-align: center;
+}
+
+
+#joaButton {
+    position: absolute;
+    top: 80px;
+    left: -260px;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+#neaButton {
+    position: absolute;
+    top: 80px;
+    left: 260px;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.onHover:hover {
+    background-color: #ccc;
+    border: 3px solid #545657;
+    cursor: pointer;
+}
+
+.onHover {
+    user-select: none;
+}
+
+#powerButton:hover {
+    background-color: #ccc;
+    border: 3px solid #545657;
+    cursor: pointer;
+}
+
+#powerButton:hover>.fas {
+    color: #545657;
+    cursor: pointer;
+}
+
+#logButton:hover {
+    background-color: #ccc;
+    border: 3px solid #545657;
+    cursor: pointer;
+}
+
+#logButton:hover>.fas {
+    background-color: #ccc;
+    color: #545657;
+    cursor: pointer;
+}
+
+#nextButton:hover>.fas {
+    color: #545657;
 }

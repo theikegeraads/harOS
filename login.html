@@ -5,31 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HarOS</title>
-    <link rel="stylesheet" href="/lib/css/style.css">
+    <link rel="stylesheet" href="/lib/css/login.css">
     <link rel="stylesheet" href="/lib/fontawesome/css/all.css">
-    <script src="/lib/main.js"></script>
+    <script src="/lib/js/login.js"></script>
 </head>
 
 <body>
     <div id="fade"></div>
+    <div id="blackScreen"></div>
     <div id="loginContent">
         <h1 id="userText">Har</h1>
         <div id="userBubble">
             <img id="harWave" src="/lib/img/harThumb.png">
             <input id="codeField" type="text" placeholder="Wat is dien code?">
-            <div id="nextButton">
+            <div class="onHover" id="nextButton">
                 <i class="fas fa-arrow-right" id="nextArrow"></i>
             </div>
         </div>
         <h6 id="powerText">Oetzette</h6>
         <h6 id="logText">Aafmelde</h6>
-        <div id="powerButton">
+        <div onclick="sureHaije()" id="powerButton">
             <i class="fas fa-power-off" id="offIcon"></i>
         </div>
-        <div id="logButton">
+        <div onclick="sureHaije()" class="onHover" id="logButton">
             <i class="fas fa-sign-out-alt" id="signoutIcon"></i>
         </div>
     </div>
+
+
+
+    <div style="visibility: hidden;" id="leaveContent">
+        <div id="userBubble">
+            <img id="harWave" src="/lib/img/harAngry.png">
+        </div>
+        <h1 id="userText">Wilse echt weggoan?</h1>
+        <div onclick="haije()" class="haijeButton onHover" id="joaButton">
+            <p>Joa, gank weg.</p>
+        </div>
+        <div onclick="back()" class="haijeButton onHover" id="neaButton">
+            <p>Nea, ik wil truuk.</p>
+        </div>
+    </div>
+
+    <div style="visibility: hidden;" id="exitContent">
+        <h1 id="userText">Okeej, haije dan.</h1>
+        <div id="userBubble">
+            <img style="height: 80%;" id="harWave" src="/lib/img/harWave.png">
+        </div>
+    </div>
+
 </body>
 
 </html>
