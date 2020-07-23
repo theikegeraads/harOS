@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/desktop/lib/css/desktop.css">
+    <title>HarOS</title>
+</head>
+<body>
+    <div onclick="start('hide')" id="backlayer"></div>
+    <div id="fade"></div>
+    <div id="taskbar">
+        <img onclick="start('show') " class="tbIcon" id="startHar" src="/desktop/lib/img/harThink.png">
+        <img class="tbIcon" id="kgh" src="/desktop/lib/img/kgh.png">
+        <img class="tbIcon" id="tgh" src="/desktop/lib/img/tgh.png">
+        <div id="clock"></div>
+        <div id="line1"></div>
+    </div>
+    <div id="startMenu"></div>
+
+    <script type="module" src="./lib/js/main.js"></script>
+    <script type="module" src="./lib/js/functions.js"></script>
+    <script src="./lib/js/clock.js"></script>
+    <script>
+    /**
+     * Function to show or hide the start menu.
+     *
+     * @param {*} state
+     * @example start(show);
+     * @author keanucode 
+     */
+    function start(state) {
+        startMenu = document.getElementById('startMenu')
+        switch (state) {
+            case "show": {
+                startMenu.style.visibility = "visible";
+                break;
+            }
+            case "hide": {
+                startMenu.style.visibility = "hidden";
+                break;
+            }
+        }
+    }
+
+    function heuj() {
+        console.log("hueheu")
+    }
+    </script>
+</body>
+</html>

@@ -1,7 +1,7 @@
 # harOS
 Web-OS based on images made by @theikegeraads
 
-If icons aren't loading correctly, download a FontAwesome ZIP file downloaded from [here](https://fontawesome.com/start) and extract it into a folder called `fontawesome` in the `lib` folder.
+Meant to be opened on a PC.
 
 ---
 

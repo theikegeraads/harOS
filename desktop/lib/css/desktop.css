@@ -1,0 +1,105 @@
+@keyframes fadeIn {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.tbIcon:hover {
+    transform: scale(1.1);
+}
+
+#fade {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 10000;
+    opacity: 1;
+    animation: fadeIn 2s forwards linear;
+}
+
+body {
+    background-image: url("/desktop/lib/img/specialBG.jpg");
+    background-size: cover;
+    margin: 0;
+    user-select: none;
+}
+
+#taskbar {
+    height: 40px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.411);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    bottom: 0;
+    z-index: 50;
+
+}
+
+#startHar {
+    height: 95%;
+    position: absolute;
+    left: 5px;
+}
+
+#line1 {
+    height: 100%;
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.211);
+    position: absolute;
+    left: 50px;
+}
+
+#kgh {
+    height: 80%;
+    position: absolute;
+    left: 65px;
+    top: 2px;
+}
+
+#tgh {
+    height: 80%;
+    top: 2px;
+    position: absolute;
+    left: 110px;
+    border-bottom-left-radius: 10px;
+}
+
+#startMenu {
+    height: 400px;
+    width: 250px;
+    border-radius: 2px solid grey;
+    background-color: rgba(0, 0, 0, 0.603);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    bottom: 40px;
+    border-top-right-radius: 10px;
+    z-index: 100;
+    visibility: hidden;
+}
+
+@font-face {
+    font-family: "product-sans";
+    src: url("../../../lib/fonts/Product\ Sans\ Regular.ttf")
+}
+
+#clock {
+    font-family: 'product-sans', sans-serif;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    right: 60px;
+    top: 6px;
+}
+
+#backlayer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 25;
+}
