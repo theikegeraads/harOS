@@ -104,13 +104,13 @@ body {
 
 #startMenu {
     height: 400px;
-    width: 250px;
-    border-radius: 2px solid grey;
+    width: 400px;
     background-color: rgba(0, 0, 0, 0.603);
     backdrop-filter: blur(5px);
     position: absolute;
     bottom: 40px;
     border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
     z-index: 100;
     visibility: hidden;
 }
@@ -222,7 +222,7 @@ body {
     height: 100px;
     width: 100px;
     background-color: transparent;
-    border: 2px dotted cornflowerblue;
+    border: 2px inset cornflowerblue;
     background-image: url("https://placekitten.com/100/100");
 }
 
@@ -279,4 +279,32 @@ body {
     left: 260px;
     top: 260px;
 
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color:black;
+    font-family: product-sans;
+    padding-left: 10px;
+}
+
+#appPanel{
+    background-color: #ffffff6b;
+    height: 95%;
+    width: 60%; /* ff voor text */
+    position: absolute;
+    top:0;
+    left: 10px;
+    bottom:0;
+    border-radius: 10px;
+    margin: auto;
+    padding: heujmdiejid eikeee;
+
+}
+
+#category {
+    font-family: product-sans;
 }
