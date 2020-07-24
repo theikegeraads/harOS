@@ -301,7 +301,8 @@ h6 {
     bottom:0;
     border-radius: 10px;
     margin: auto;
-    padding: heujmdiejid eikeee;
+    padding: 0px 5px 3px 5px;
+    overflow-y: scroll;
 
 }
 
