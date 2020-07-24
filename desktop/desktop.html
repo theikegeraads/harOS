@@ -22,25 +22,25 @@
             <div onclick="shutDown()" id="powerButton">
                 <p>|</p>
             </div>
-            
-            </div>
-            <div id="iconGrid">
-                <div class="icon" id="icon1"></div>
-                <div class="icon" id="icon2"></div>
-                <div class="icon" id="icon3"></div>
-                <div class="icon" id="icon4"></div>
+
+        </div>
+        <div id="iconGrid">
+            <div class="icon" id="icon1"></div>
+            <div class="icon" id="icon2"></div>
+            <div class="icon" id="icon3"></div>
+            <div class="icon" id="icon4"></div>
             <div class="icon" id="icon5"></div>
             <div class="icon" id="icon6"></div>
             <div class="icon" id="icon7"></div>
             <div class="icon" id="icon8"></div>
             <div class="icon" id="icon9"></div>
         </div>
-            
-            <div style="visibility: hidden;" id="leaveContent">
-                <div id="userBubble">
-                    <img id="harWave" src="/lib/img/harAngry.png">
-                </div>
-                <h1 id="userText">Wilse echt weggoan?</h1>
+
+        <div style="visibility: hidden;" id="leaveContent">
+            <div id="userBubble">
+                <img id="harWave" src="/lib/img/harAngry.png">
+            </div>
+            <h1 id="userText">Wilse echt weggoan?</h1>
             <div onclick="haije()" class="haijeButton onHover" id="joaButton">
                 <p>Joa, gank weg.</p>
             </div>
@@ -62,49 +62,6 @@
 
     <script src="./lib/js/main.js"></script>
     <script src="./lib/js/clock.js"></script>
-    <script>
-        /**
-         * Function to show or hide the start menu.
-         *
-         * @param {*} state
-         * @example start(show);
-         * @author keanucode 
-         */
-        function start(state) {
-            startMenu = document.getElementById('startMenu')
-            switch (state) {
-                case "show": {
-                    startMenu.style.visibility = "visible";
-                    break;
-                }
-                case "hide": {
-                    startMenu.style.visibility = "hidden";
-                    break;
-                }
-            }
-        }
-
-        async function fade(element) {
-            await new Promise(r => setTimeout(r, 1000));
-            var op = 0.1;
-            element.style.display = "block";
-            var timer = setInterval(() => {
-                if (op >= 1) {
-                    clearInterval(timer)
-                }
-                element.style.opacity = op;
-                element.style.filter = "alpha(opacity=" + op * 100 + ")";
-                element.style.zIndex = "20000";
-                op += op * 0.1;
-            }, 10)
-            await new Promise(r => setTimeout(r, 500))
-            window.location.href = "../index.html";
-        }
-
-        function shutDown() {
-            fade(blackScreen)
-        }
-    </script>
 </body>
 
 </html>
