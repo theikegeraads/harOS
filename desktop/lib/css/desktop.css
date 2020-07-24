@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "product-sans";
+    src: url("../../../lib/fonts/Product\ Sans\ Regular.ttf")
+}
+
 @keyframes fadeIn {
     from {
         opacity: 1;
@@ -9,8 +14,56 @@
     }
 }
 
+body {
+    background-image: url("/desktop/lib/img/background.png");
+    background-size: cover;
+    margin: 0;
+    user-select: none;
+}
 
-#powerButton{
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: black;
+    font-family: product-sans;
+    padding-left: 10px;
+}
+
+.tbIcon:hover {
+    transform: scale(1.1);
+}
+
+.onHover {
+    user-select: none;
+}
+
+.onHover:hover {
+    background-color: #ccc;
+    border: 3px solid #545657;
+    cursor: pointer;
+}
+
+.haijeButton {
+    height: 50px;
+    width: 120px;
+    background-color: #AAAAAA;
+    border: 3px solid #323435;
+    font-family: product-sans;
+    color: #323435;
+    text-align: center;
+}
+
+.icon {
+    height: 100px;
+    width: 100px;
+    background-color: transparent;
+    border: 2px inset cornflowerblue;
+    background-image: url("https://placekitten.com/100/100");
+}
+
+#powerButton {
     height: 20px;
     width: 20px;
     background-color: rgb(219, 45, 45);
@@ -27,23 +80,17 @@
 
 }
 
-#powerButton:hover{
+#powerButton:hover {
     background-color: rgb(218, 96, 96);
 }
 
-#powerButton > p{
+#powerButton>p {
     position: absolute;
 
     bottom: -10px;
     left: 0;
     right: 0;
 }
-
-.tbIcon:hover {
-    transform: scale(1.1);
-}
-
-
 
 #fade {
     background-color: black;
@@ -53,13 +100,6 @@
     z-index: 10000;
     opacity: 1;
     animation: fadeIn 2s forwards linear;
-}
-
-body {
-    background-image: url("/desktop/lib/img/background.png");
-    background-size: cover;
-    margin: 0;
-    user-select: none;
 }
 
 #taskbar {
@@ -113,11 +153,6 @@ body {
     border-top-left-radius: 10px;
     z-index: 100;
     visibility: hidden;
-}
-
-@font-face {
-    font-family: "product-sans";
-    src: url("../../../lib/fonts/Product\ Sans\ Regular.ttf")
 }
 
 #clock {
@@ -180,16 +215,6 @@ body {
     letter-spacing: 2px;
 }
 
-.onHover:hover {
-    background-color: #ccc;
-    border: 3px solid #545657;
-    cursor: pointer;
-}
-
-.onHover {
-    user-select: none;
-}
-
 #joaButton {
     position: absolute;
     top: 80px;
@@ -208,102 +233,73 @@ body {
     margin: auto;
 }
 
-.haijeButton {
-    height: 50px;
-    width: 120px;
-    background-color: #AAAAAA;
-    border: 3px solid #323435;
-    font-family: product-sans;
-    color: #323435;
-    text-align: center;
-}
-
-.icon{
-    height: 100px;
-    width: 100px;
-    background-color: transparent;
-    border: 2px inset cornflowerblue;
-    background-image: url("https://placekitten.com/100/100");
-}
-
-#icon1{
+#icon1 {
     position: absolute;
     left: 20px;
     top: 20px;
-
 }
-#icon2{
+
+#icon2 {
     position: absolute;
     left: 140px;
     top: 20px;
-
 }
-#icon3{
+
+#icon3 {
     position: absolute;
     left: 260px;
     top: 20px;
-
 }
-#icon4{
+
+#icon4 {
     position: absolute;
     left: 20px;
     top: 140px;
-
 }
-#icon5{
+
+#icon5 {
     position: absolute;
     left: 140px;
     top: 140px;
-
 }
-#icon6{
+
+#icon6 {
     position: absolute;
     left: 260px;
     top: 140px;
-
 }
-#icon7{
+
+#icon7 {
     position: absolute;
     left: 20px;
     top: 260px;
-
 }
-#icon8{
+
+#icon8 {
     position: absolute;
     left: 140px;
     top: 260px;
-
 }
-#icon9{
+
+#icon9 {
     position: absolute;
     left: 260px;
     top: 260px;
-
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color:black;
-    font-family: product-sans;
-    padding-left: 10px;
-}
-
-#appPanel{
+#appPanel {
     background-color: #ffffff6b;
     height: 95%;
-    width: 60%; /* ff voor text */
+    width: 60%;
+    /* ff voor text */
     position: absolute;
-    top:0;
+    top: 0;
     left: 10px;
-    bottom:0;
+    bottom: 0;
     border-radius: 10px;
     margin: auto;
     padding: 0px 5px 3px 5px;
     overflow-y: scroll;
-
 }
 
 #category {

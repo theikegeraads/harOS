@@ -21,6 +21,40 @@ body {
     user-select: none;
 }
 
+h1,
+h2,
+h3,
+h4 {
+    color: white;
+    font-family: product-sans;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.onHover:hover {
+    background-color: #ccc;
+    border: 3px solid #545657;
+    cursor: pointer;
+}
+
+.onHover {
+    user-select: none;
+}
+
+.haijeButton {
+    height: 50px;
+    width: 120px;
+    background-color: #AAAAAA;
+    border: 3px solid #323435;
+    font-family: product-sans;
+    color: #323435;
+    text-align: center;
+}
+
 #harWave {
     height: 90%;
     position: absolute;
@@ -66,8 +100,6 @@ body {
 #screen1 {
     background-color: red;
 }
-
-
 
 #userText {
     color: white;
@@ -171,31 +203,6 @@ body {
     color: #323435;
 }
 
-h1,
-h2,
-h3,
-h4 {
-    color: white;
-    font-family: product-sans;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-}
-
-.haijeButton {
-    height: 50px;
-    width: 120px;
-    background-color: #AAAAAA;
-    border: 3px solid #323435;
-    font-family: product-sans;
-    color: #323435;
-    text-align: center;
-}
-
-
 #joaButton {
     position: absolute;
     top: 80px;
@@ -212,16 +219,6 @@ h4 {
     bottom: 0;
     right: 0;
     margin: auto;
-}
-
-.onHover:hover {
-    background-color: #ccc;
-    border: 3px solid #545657;
-    cursor: pointer;
-}
-
-.onHover {
-    user-select: none;
 }
 
 #powerButton:hover {
