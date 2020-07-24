@@ -1,51 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/desktop/lib/css/desktop.css">
     <title>HarOS</title>
 </head>
+
 <body>
-    <div onclick="start('hide')" id="backlayer"></div>
-    <div id="fade"></div>
-    <div id="taskbar">
-        <img onclick="start('show') " class="tbIcon" id="startHar" src="/desktop/lib/img/harThink.png">
-        <img class="tbIcon" id="kgh" src="/desktop/lib/img/kgh.png">
-        <img class="tbIcon" id="tgh" src="/desktop/lib/img/tgh.png">
-        <div id="clock"></div>
-        <div id="line1"></div>
+    <div id="desktop" style="visibility: visible;">
+        <div onclick="start('hide')" id="backlayer"></div>
+        <div id="fade"></div>
+        <div id="blackScreen"></div>
+        <div id="taskbar">
+            <img onclick="start('show') " class="tbIcon" id="startHar" src="/desktop/lib/img/harThink.png">
+            <img class="tbIcon" id="kgh" src="/desktop/lib/img/kgh.png">
+            <img class="tbIcon" id="tgh" src="/desktop/lib/img/tgh.png">
+            <div id="clock"></div>
+            <div id="line1"></div>
+            <div onclick="shutDown()" id="powerButton">
+                <p>|</p>
+            </div>
+            
+            </div>
+            <div id="iconGrid">
+                <div class="icon" id="icon1"></div>
+                <div class="icon" id="icon2"></div>
+                <div class="icon" id="icon3"></div>
+                <div class="icon" id="icon4"></div>
+            <div class="icon" id="icon5"></div>
+            <div class="icon" id="icon6"></div>
+            <div class="icon" id="icon7"></div>
+            <div class="icon" id="icon8"></div>
+            <div class="icon" id="icon9"></div>
+        </div>
+            
+            <div style="visibility: hidden;" id="leaveContent">
+                <div id="userBubble">
+                    <img id="harWave" src="/lib/img/harAngry.png">
+                </div>
+                <h1 id="userText">Wilse echt weggoan?</h1>
+            <div onclick="haije()" class="haijeButton onHover" id="joaButton">
+                <p>Joa, gank weg.</p>
+            </div>
+            <div onclick="back()" class="haijeButton onHover" id="neaButton">
+                <p>Nea, ik wil truuk.</p>
+            </div>
+        </div>
+
+        <div style="visibility: hidden;" id="exitContent">
+            <h1 id="userText">Okeej, haije dan.</h1>
+            <div id="userBubble">
+                <img style="height: 80%;" id="harWave" src="/lib/img/harWave.png">
+            </div>
+        </div>
     </div>
     <div id="startMenu"></div>
 
-    <script type="module" src="./lib/js/main.js"></script>
-    <script type="module" src="./lib/js/functions.js"></script>
+
+
+    <script src="./lib/js/main.js"></script>
     <script src="./lib/js/clock.js"></script>
     <script>
-    /**
-     * Function to show or hide the start menu.
-     *
-     * @param {*} state
-     * @example start(show);
-     * @author keanucode 
-     */
-    function start(state) {
-        startMenu = document.getElementById('startMenu')
-        switch (state) {
-            case "show": {
-                startMenu.style.visibility = "visible";
-                break;
-            }
-            case "hide": {
-                startMenu.style.visibility = "hidden";
-                break;
+        /**
+         * Function to show or hide the start menu.
+         *
+         * @param {*} state
+         * @example start(show);
+         * @author keanucode 
+         */
+        function start(state) {
+            startMenu = document.getElementById('startMenu')
+            switch (state) {
+                case "show": {
+                    startMenu.style.visibility = "visible";
+                    break;
+                }
+                case "hide": {
+                    startMenu.style.visibility = "hidden";
+                    break;
+                }
             }
         }
-    }
 
-    function heuj() {
-        console.log("hueheu")
-    }
+        async function fade(element) {
+            await new Promise(r => setTimeout(r, 1000));
+            var op = 0.1;
+            element.style.display = "block";
+            var timer = setInterval(() => {
+                if (op >= 1) {
+                    clearInterval(timer)
+                }
+                element.style.opacity = op;
+                element.style.filter = "alpha(opacity=" + op * 100 + ")";
+                element.style.zIndex = "20000";
+                op += op * 0.1;
+            }, 10)
+            await new Promise(r => setTimeout(r, 500))
+            window.location.href = "../index.html";
+        }
+
+        function shutDown() {
+            fade(blackScreen)
+        }
     </script>
 </body>
+
 </html>

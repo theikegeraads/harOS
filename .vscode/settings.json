@@ -1,5 +1,6 @@
 {
     "editor.formatOnPaste": true,
     "editor.autoIndent": "full",
-    "files.autoSave": "afterDelay"
+    "files.autoSave": "afterDelay",
+    "discord.enabled": false
 }

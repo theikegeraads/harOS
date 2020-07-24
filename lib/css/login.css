@@ -21,6 +21,17 @@ body {
     user-select: none;
 }
 
+#harWave {
+    height: 90%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
 #fade {
     background-color: black;
     height: 100%;
@@ -56,15 +67,7 @@ body {
     background-color: red;
 }
 
-#harWave {
-    height: 90%;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
+
 
 #userText {
     color: white;

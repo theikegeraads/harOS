@@ -9,9 +9,41 @@
     }
 }
 
+
+#powerButton{
+    height: 20px;
+    width: 20px;
+    background-color: rgb(219, 45, 45);
+    position: absolute;
+    right: 15px;
+    top: 7.5px;
+    border-radius: 7px;
+    border: 1.5px solid white;
+    color: white;
+    font-size: small;
+    text-align: center;
+    font-weight: bolder;
+    font-stretch: extra-expanded;
+
+}
+
+#powerButton:hover{
+    background-color: rgb(218, 96, 96);
+}
+
+#powerButton > p{
+    position: absolute;
+
+    bottom: -10px;
+    left: 0;
+    right: 0;
+}
+
 .tbIcon:hover {
     transform: scale(1.1);
 }
+
+
 
 #fade {
     background-color: black;
@@ -24,7 +56,7 @@
 }
 
 body {
-    background-image: url("/desktop/lib/img/specialBG.jpg");
+    background-image: url("/desktop/lib/img/background.png");
     background-size: cover;
     margin: 0;
     user-select: none;
@@ -102,4 +134,149 @@ body {
     width: 100%;
     position: absolute;
     z-index: 25;
+}
+
+#blackScreen {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: black;
+    z-index: -10;
+    opacity: 0;
+}
+
+
+#harWave {
+    height: 90%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#userBubble {
+    height: 200px;
+    width: 200px;
+    background-color: #2d2d2d;
+    top: 0;
+    bottom: 250px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    border-radius: 1000px;
+}
+
+#userText {
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    font-family: product-sans;
+    letter-spacing: 2px;
+}
+
+.onHover:hover {
+    background-color: #ccc;
+    border: 3px solid #545657;
+    cursor: pointer;
+}
+
+.onHover {
+    user-select: none;
+}
+
+#joaButton {
+    position: absolute;
+    top: 80px;
+    left: -260px;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+#neaButton {
+    position: absolute;
+    top: 80px;
+    left: 260px;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.haijeButton {
+    height: 50px;
+    width: 120px;
+    background-color: #AAAAAA;
+    border: 3px solid #323435;
+    font-family: product-sans;
+    color: #323435;
+    text-align: center;
+}
+
+.icon{
+    height: 100px;
+    width: 100px;
+    background-color: transparent;
+    border: 2px dotted cornflowerblue;
+    background-image: url("https://placekitten.com/100/100");
+}
+
+#icon1{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+
+}
+#icon2{
+    position: absolute;
+    left: 140px;
+    top: 20px;
+
+}
+#icon3{
+    position: absolute;
+    left: 260px;
+    top: 20px;
+
+}
+#icon4{
+    position: absolute;
+    left: 20px;
+    top: 140px;
+
+}
+#icon5{
+    position: absolute;
+    left: 140px;
+    top: 140px;
+
+}
+#icon6{
+    position: absolute;
+    left: 260px;
+    top: 140px;
+
+}
+#icon7{
+    position: absolute;
+    left: 20px;
+    top: 260px;
+
+}
+#icon8{
+    position: absolute;
+    left: 140px;
+    top: 260px;
+
+}
+#icon9{
+    position: absolute;
+    left: 260px;
+    top: 260px;
+
 }
