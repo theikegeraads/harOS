@@ -19,6 +19,7 @@ body {
     background-size: cover;
     margin: 0;
     user-select: none;
+    overflow: hidden;
 }
 
 h2,
@@ -30,6 +31,13 @@ h6 {
     font-family: product-sans;
     padding-left: 10px;
 }
+
+hr {
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+}
+
 
 .tbIcon:hover {
     transform: scale(1.1);
@@ -77,12 +85,55 @@ h6 {
     border: 1.5px solid white;
 }
 
+#khr {
+    border: none;
+    border-top: 3px #333;
+    color: white;
+    overflow: visible;
+    text-align: center;
+    height: 3px;
+    font-family: product-sans;
+    border-radius: 5px;
+}
+
+#thr {
+    border: none;
+    border-top: 3px #333;
+    color: white;
+    overflow: visible;
+    text-align: center;
+    height: 3px;
+    border-radius: 5px;
+    font-family: product-sans;
+}
+
+#khr:after {
+    content: "Keanu";
+    background: black;
+    padding: 0 4px;
+    position: relative;
+    top: -17px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+
+#thr:after {
+    content: "Theike";
+    padding: 0 4px;
+    position: relative;
+    top: -17px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: black;
+}
+
 #powerButton {
     background-color: rgb(219, 45, 45);
     right: 10px;
 }
 
-#powerButton > p {
+#powerButton>p {
     position: absolute;
     left: 0;
     right: 0;
