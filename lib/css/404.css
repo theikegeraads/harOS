@@ -45,11 +45,11 @@ a:visited {
 }
 
 #har {
-    height: 90%;
+    height: 80%;
     position: absolute;
     margin: auto;
     top: 0;
-    left: 0;
+    left: 5px;
     right: 0;
     bottom: 0;
 }
@@ -59,7 +59,7 @@ a:visited {
     width: 200px;
     background-color: #2d2d2d;
     top: 0;
-    bottom: 250px;
+    bottom: 200px;
     left: 0;
     right: 0;
     margin: auto;

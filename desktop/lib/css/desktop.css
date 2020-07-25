@@ -63,33 +63,70 @@ h6 {
     background-image: url("https://placekitten.com/100/100");
 }
 
-#powerButton {
-    height: 20px;
-    width: 20px;
-    background-color: rgb(219, 45, 45);
-    position: absolute;
-    right: 15px;
-    top: 7.5px;
-    border-radius: 7px;
-    border: 1.5px solid white;
+.startButtons {
     color: white;
+    bottom: 10px;
     font-size: small;
     text-align: center;
     font-weight: bolder;
     font-stretch: extra-expanded;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 7px;
+    border: 1.5px solid white;
+}
 
+#powerButton {
+    background-color: rgb(219, 45, 45);
+    right: 10px;
+}
+
+#powerButton > p {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10.5px;
+}
+
+#logoutButton {
+    right: 70px;
+    background-color: rgb(219, 138, 45);
+}
+
+#restartButton {
+    right: 40px;
+    background-color: rgb(67, 155, 32);
+}
+
+#restartButton>.fas {
+    position: absolute;
+    right: 0px;
+    top: 4px;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+#logoutButton>.fas {
+    position: absolute;
+    left: 1px;
+    top: 3.8px;
+    height: 100%;
+    width: 100%;
+    color: white;
 }
 
 #powerButton:hover {
     background-color: rgb(218, 96, 96);
 }
 
-#powerButton>p {
-    position: absolute;
+#restartButton:hover {
+    background-color: rgb(116, 218, 96);
+}
 
-    bottom: -10px;
-    left: 0;
-    right: 0;
+#logoutButton:hover {
+    background-color: rgb(224, 222, 70);
 }
 
 #fade {
@@ -160,7 +197,7 @@ h6 {
     color: white;
     font-size: 20px;
     position: absolute;
-    right: 60px;
+    right: 15px;
     top: 6px;
 }
 
@@ -291,17 +328,77 @@ h6 {
     background-color: #ffffff6b;
     height: 95%;
     width: 60%;
-    /* ff voor text */
     position: absolute;
     top: 0;
     left: 10px;
     bottom: 0;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
     margin: auto;
     padding: 0px 5px 3px 5px;
     overflow-y: scroll;
 }
 
+#appPanel::-webkit-scrollbar {
+    width: 4px;
+    position: absolute;
+    right: 100px;
+    padding-top: 10px;
+}
+
+
+#appPanel::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: transparent;
+}
+
+#appPanel::-webkit-scrollbar-thumb {
+    background: #121212;
+    border-radius: 100px;
+    height: 10px;
+    padding-left: 20px;
+}
+
+
 #category {
     font-family: product-sans;
+}
+
+#pfp {
+    height: 64px;
+    width: 64px;
+    border: 3px solid rgb(255, 255, 255, 0.600);
+    background: transparent;
+    position: absolute;
+    top: 10px;
+    right: 35px;
+    border-radius: 5px;
+}
+
+#picture {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+#accountInfo {
+    position: absolute;
+    height: 69%;
+    width: 100px;
+    right: 20px;
+    top: 90px;
+}
+
+#accountName {
+    color: white;
+    position: absolute;
+    left: 25px;
+    top: -20px;
+    letter-spacing: 0.5px;
 }

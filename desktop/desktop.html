@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/desktop/lib/css/desktop.css">
     <title>HarOS</title>
+    <script src="https://kit.fontawesome.com/caa970b278.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./lib/css/desktop.css">
 </head>
 
 <body>
@@ -14,17 +15,21 @@
         <div id="startMenu">
             <div id="appPanel">
                 <h3>dieke</h3>
-                <h3>dieke</h3>
-                <h3>dieke</h3>
-                <h3>dieke</h3>
-                <h3>dieke</h3>
-                <h3>dieke</h3>
-                <h3>dieke</h3>
-                <h3>dieke</h3>
-                <h3>dieke</h3>
-                <h3>dieke</h3>
-                <h3>dieke</h3>
-                <h3>dieke</h3>
+            </div>
+            <div class="startButtons" onclick="fade(blackScreen)" id="powerButton">
+                <p>|</p>
+            </div>
+            <div class="startButtons" onclick="fade(blackScreen, 'login')" id="logoutButton">
+                <i class="fas fa-sign-out-alt"></i>
+            </div>
+            <div class="startButtons" onclick="fade(blackScreen, 'start')" id="restartButton">
+                <i class="fas fa-redo"></i>
+            </div>
+            <div id='pfp'>
+                <img id="picture" src="./lib/img/laptophar.png">
+            </div>
+            <div id="accountInfo">
+                <h3 id="accountName">Har</h3>
             </div>
         </div>
         <div id="fade"></div>
@@ -37,9 +42,7 @@
                 src="/desktop/lib/img/tgh.png">
             <div id="clock"></div>
             <div id="line1"></div>
-            <div onclick="shutDown()" id="powerButton">
-                <p>|</p>
-            </div>
+
 
         </div>
         <div id="iconGrid">

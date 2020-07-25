@@ -19,15 +19,15 @@ function start(state) {
     }
 }
 
-
 /**
  * Function to fade out an element.
  *
  * @param {*} element
+ * @param {string} page
  * @example fade(h1);
  * @author keanucode
  */
-async function fade(element) {
+async function fade(element, page = "none") {
     await new Promise(r => setTimeout(r, 1000));
     var op = 0.1;
     element.style.display = "block";
@@ -41,9 +41,19 @@ async function fade(element) {
         op += op * 0.1;
     }, 10)
     await new Promise(r => setTimeout(r, 500))
-    window.location.href = "../index.html";
-}
 
-function shutDown() {
-    fade(blackScreen)
+    switch (page) {
+        case "none": {
+            return;
+            break;
+        }
+        case "login": {
+            window.location.href = '../login.html';
+            break;
+        }
+        case "start": {
+            window.location.href = '../index.html';
+            break;
+        }
+    }
 }
