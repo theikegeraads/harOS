@@ -68,7 +68,12 @@ hr {
     width: 100px;
     background-color: transparent;
     border: 2px inset cornflowerblue;
-    background-image: url("https://placekitten.com/100/100");
+    background-image: url("https://placekitten.com/200/200");
+    z-index: 26;
+}
+
+.icon:hover{
+    transform: scale(1.1);
 }
 
 .startButtons {
@@ -325,24 +330,38 @@ hr {
     position: absolute;
     left: 20px;
     top: 20px;
+    background-image: url("/desktop/lib/img/keanucode.png");
+    background-size: 100%;
+    border: none;
+    border-radius: 10px;
 }
 
 #icon2 {
     position: absolute;
     left: 140px;
     top: 20px;
+    border: none;
+    background-image: url('/desktop/lib/img/trashhond.png');
+    background-size: 100%;
 }
 
 #icon3 {
     position: absolute;
     left: 260px;
     top: 20px;
+    background-image: url("/desktop/lib/img/calcIcon.png");
+    background-size: 100%;
+    border: none;
 }
 
 #icon4 {
     position: absolute;
     left: 20px;
     top: 140px;
+    background: url(/desktop/lib/img/weatherIcon.png);
+    background-size: 100%;
+    border: none;
+
 }
 
 #icon5 {
